@@ -1,0 +1,430 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head> 
+	<meta charset ="utf-8"> 
+	<title>'. $user.''s profile - ideablr</title> 
+	<link rel="shortcut icon" href="favicon.ico" /> 
+	<link rel="icon" href="/favicon.ico" type="image/x-icon">
+</head>
+<style>
+    @import url("style.css");
+    @import url("profile.css");
+@media screen and (max-width: 1020px)
+		{
+			ul.footlist li:first-child {
+				float: left;
+						
+			}
+			.foot {
+				transform: translateX(0%);
+				margin: auto;
+			}
+			ul.footlist li:last-child {
+				float: right;
+				transform: translateY(35%);
+			}
+				}
+		@media screen and (max-width: 999px)
+		{
+			ul.footlist li:first-child {
+				float: left;
+						
+			}
+			.foot {
+				transform: translateX(3%);
+				margin: auto;
+			}
+			ul.footlist li:last-child {
+				float: right;
+				transform: translateY(40%);
+			}
+			
+		}
+		@media screen and (max-width: 865px)
+		{
+			ul.footlist li:first-child {
+				float: left;
+				padding-left: 38%;
+				padding-right: 10%;
+			}
+			.foot {
+				transform: translateX(-13%);
+				margin: auto;
+				padding-bottom: 10%;
+				padding-left: 20%;
+				width: 90%;
+			}
+			.foot img {
+				width: 5%;
+			}
+			ul.footlist li:last-child {
+				float: none;
+				transform: translateY(-40%);
+				padding-left: 8%;
+			}
+			.footleft {
+				width: 80%;
+			}
+			#body {
+				padding-bottom:100%;
+			}
+		}
+		
+		@media screen and (max-width: 700px)
+		{
+			ul.footlist li:first-child {
+				float: left;
+				padding-left: 35%;
+				padding-right: 10%;
+			}
+			.foot {
+				transform: translateX(-13%);
+				margin: auto;
+				padding-bottom: 20%;
+				padding-left: 20%;
+				width: 90%;
+			}
+			.foot img {
+				width: 6%;
+			}
+			ul.footlist li:last-child {
+				float: none;
+				transform: translateY(-100%);
+				padding-left: 12%;
+			}
+			.footleft {
+				width: 70%;
+			}
+		}
+		
+		@media screen and (max-width: 600px)
+		{
+			ul.footlist li:first-child {
+				float: left;
+				padding-left: 32%;
+				padding-right: 10%;
+			}
+			.foot {
+				transform: translateX(-13%);
+				margin: auto;
+				padding-bottom: 15%;
+				padding-left: 20%;
+				width: 90%;
+			}
+			.foot img {
+				width: 7%;
+			}
+			ul.footlist li:last-child {
+				float: none;
+				transform: translateY(-70%);
+				padding-left: 20%;
+			}
+			.footleft {
+				width: 60%;
+			}
+		}
+		
+		
+		@media screen and (max-width: 450px)
+		{
+			ul.footlist li:first-child {
+				float: left;
+				padding-left: 28%;
+				padding-right: 10%;
+			}
+			.foot {
+				transform: translateX(-13%);
+				margin: auto;
+				padding-bottom: 15%;
+				padding-left: 20%;
+				width: 90%;
+			}
+			.foot img {
+				width: 5%;
+			}
+			ul.footlist li:last-child {
+				float: none;
+				transform: translateY(-50%);
+				padding-left: 33%;
+			}
+			.footleft {
+				width: 50%;
+			}
+		}
+</style>
+<!--START OF NAV -->
+<div id="container">
+<header>
+	<h1 class="head"><!--NAVBAR BEGINS-->   
+    <nav>
+        <ul class="title" id="title">
+        	<a href="index-user.html"><img id="pinkhead" class="left" src="images/ilogo.png" alt="" width="13%" height=""><!--logo --></a>
+                <div class="right">
+                    <li class="title"><a class="title" id="title" href="crafts.html">ARTS & CRAFTS</a></li>
+                    <li class="title"><a class="title" href="crafts.html">FOOD</a></li>
+                    <li class="title"><a class="title" href="crafts.html">TECHNOLOGY</a></li>
+                    <li class="title"><a class="title" href="crafts.html">OTHER</a></li>
+                    <li class="icon"><a class="icona" href="javascript:void(0);" onclick="myFunction()"><strong>☰</strong></a></li>
+        		 </div>
+		</ul>
+        <div class="dropdown">
+        <div class="dropbtn"><img class="profileicon" src="images/userprofile.png" alt="" width="30px" /></div>
+        <div class="dropdown-content">
+        <a id="namer" href="profile-madeline.html">madeline</a>
+        <a id="myBtn" href="#">News (2)</a>
+        <a href="login.html">Logout</a>
+        
+            </div>
+            </div>
+        </nav>
+    </h1>
+    <h2 class="head2">ideablr: share your ideas<br/>a diy social media
+    </h2><!--These words don't appear. They serve 2 purposes: 
+    1.) so that the site has keywords that are searchable to search engines and 
+    2.) so that the relatively positioned home search has something to be located relatively to. 
+    (EDIT: also this was made back when i was a little more trash at HTML and CSS, pretty sure if we were to start this over again, this wouldnt exist. now my skills are less trashy, but im not going to redo the entire thing because that will drive me crazy. i really wished i had named my classes and ids a little better. smh past me.)-->
+</header><!--NAVBAR ENDS-->  
+<section>
+<div id="body">
+
+<!--POPUP THINGY-->
+                    <!-- Trigger/Open The Modal -->
+                        
+                        <!-- The Modal -->
+                        <div id="myModal" class="modal">
+                        
+                          <!-- Modal content -->
+                          <div class="modal-content">
+                            <span class="close">&times;</span>
+                            <!--Stuff inside popup-->
+							<div class="newstitle">You Have 2 Notification(s)</div><br/><br/><div onclick="location.href='' . substr($notificationlist[$x*3+1],0,440) .''"; class="newsbox">
+                                <div class="closenews" onclick="deleteNotification('','','');">&times;</div>
+								<br/>jayleen left a comment on your profile on 1/1/11 at 1:11pm.
+                                    </div>
+							<div onclick="location.href='' . substr($notificationlist[$x*3+1],0,440) .''"; class="newsbox">
+                                <div class="closenews" onclick="deleteNotification('','','');">&times;</div>
+								<br/>andrea favorited your article on 5/6/36 at 2:44pm.
+                                    </div>
+							<br/><br/>
+							Note: without PHP, the notifications cannot be deleted.
+						</div>
+                          </div>
+                            <!--End of Stuff-->
+
+<br/>
+<br/>
+<body style="position: relative;"> 
+<!--PROFILE SECTION -->
+<link href="profile.css" rel="stylesheet">
+<div class="container">
+    <div class="row-profile">
+			<div class="profile-sidebar">
+				<!-- SIDEBAR USER TITLE -->
+				<div class="profile-usertitle">
+                                        <div id="userphoto"><img id="profilepic" src="images/madeline.jpg" alt="default avatar" height="150" width="150">
+										<img onclick="uploadProfilePicture();" id="camera" style="cursor:pointer" src="images/camera.png" alt="edit image" height="150" width="150"/></div>
+                                        <form action="profile-madeline.html" method="post" id="profileform" enctype="multipart/form-data"><input name="photo" type="file" id="photo" style="display: none;" /></form>
+										<div id="profile-name" class="profile-usertitle-name">madeline</div>
+					<div class="profile-usertitle-job"> Madeline Huang</div>
+				</div>
+				<!-- END SIDEBAR USER TITLE -->
+                                
+				<!-- SIDEBAR MENU -->
+				<div class="profile-usermenu">
+					<ul class="nav">
+						<li id="profile-overview" class="active">
+							<a href="javascript:void(0)" onclick="openCity('about')" onclick="refresh();">
+							About </a>
+						</li>
+                                                <li id="profile-overview" class="active">
+							<a href="javascript:void(0)" onclick="openCity('article')" onclick="refresh();">
+							Articles </a>
+						</li>
+                                                <!--<li id="profile-overview" class="active">
+							<a href="javascript:void(0)" onclick="openCity('connect')" onclick="refresh();">
+							Connect </a>
+						</li>-->
+                                                <li id="profile-overview" class="active">
+							<a href="javascript:void(0)" onclick="openCity('comment')" onclick="refresh();">
+							Comments </a>
+						</li>
+					</ul>
+				</div>
+				<!-- END MENU -->
+			</div>
+            <div class="profile-content">
+            <!--Overview Page-->
+            <!-- Activity Section -->
+            
+            <!-- ABOUT SECTION-->
+            <div id="about" class="city">
+            <div class="title"><image src="images/profileabout.png"> About</div>
+            <div class="profile-userbuttons">
+			<button id="editpage" onclick = editPage(); class="btn btn-message btn-profile">EDIT</button>
+                </div></br>
+            <hr style="margin-top:-10px">
+            <p class="info">
+            <label class="col-about"> <b>Name: </b> </label> Madeline Huang</br>
+            <label class="col-about"> <b>Favorite Category:</b> </label> <span name="favtag" id="favtag" style="display:inline-block;">None</span> 
+            <p class="info"><label class="col-about"> <b>Bio:</b> </label> <span name="bio" id="bio" style="width: 60%; display:inline-block;">This user hasn't made a bio yet!
+           </span> </p></br>
+            
+            <label class="col-about"> <b>User Stats:</b> </label> <br/>
+            <p class="smallinfo">
+            <label class="smallabout">Articles Written:</label>10<br/>
+            <label class="smallabout">Articles Favorited:</label>10<br/>
+            <label class="smallabout">Comments Posted:</label>10<br/>
+            <label class="smallabout">Articles Rated:</label>10<br/>
+            </p>
+            </div>
+            <!-- END OF ABOUT-->
+            
+            <!-- ARTICLES SECTION-->
+            <div id="article" class="city" style="display:none">
+            <div class="title"><image src="images/profilearticle.png"> Articles</br></div>
+            <hr>
+            <p class="info">
+            <label class="col-about"> <b>Recent Favorites:</b> </label>
+            <ul class="favoritelist"><!--SHOW UP TO SEVEN FAVORITES-->
+			<li onclick="location.href= ''";><a><img src="images/cookie.png"  width="70px" height="70px"/></a></li>
+			<li onclick="location.href= ''";><a><img src="images/cookie.png"  width="70px" height="70px"/></a></li>
+			<li onclick="location.href= ''";><a><img src="images/cookie.png"  width="70px" height="70px"/></a></li>
+			<li onclick="location.href= ''";><a><img src="images/cookie.png"  width="70px" height="70px"/></a></li>
+			<li onclick="location.href= ''";><a><img src="images/cookie.png"  width="70px" height="70px"/></a></li>
+			<li onclick="location.href= ''";><a><img src="images/cookie.png"  width="70px" height="70px"/></a></li>
+			<li onclick="location.href= ''";><a><img src="images/cookie.png"  width="70px" height="70px"/></a></li>
+            </ul></br>
+            
+            <label class="col-about"> <b>Recent Posts:</b> </label> 
+            <ul class="articlelist">
+            <li onclick="location.href= ''";><img src="images/cookie.png" height="100px" width="100px"/>
+                   <h1>Cookie Monster Cupcake</h1>
+                   <p>Need to do something quick and neat for a birthday party? We have the perfect cookie monster recipe that will satisfy your sweet tooth at any party or event.</p></li>
+			<li onclick="location.href= ''";><img src="images/cookie.png" height="100px" width="100px"/>
+                   <h1>Cookie Monster Cupcake</h1>
+                   <p>Need to do something quick and neat for a birthday party? We have the perfect cookie monster recipe that will satisfy your sweet tooth at any party or event.</p></li>
+			<li onclick="location.href= ''";><img src="images/cookie.png" height="100px" width="100px"/>
+                   <h1>Cookie Monster Cupcake</h1>
+                   <p>Need to do something quick and neat for a birthday party? We have the perfect cookie monster recipe that will satisfy your sweet tooth at any party or event.</p></li>
+				   </ul>
+            <br/>
+            </div>
+            <!-- END OF ARTICLES-->
+            
+            <!-- LINKS/CONNECT SECTION-->
+            
+            <!-- END OF CONNECT-->
+            
+            <!-- COMMENTS SECTION-->
+            <div id="comment" class="city" style="display:none">
+            <div class="title"><image src="images/profilecomment.png"> Comments</br></div> 
+            madeline<br/> </h1> 
+<div class="commentBox">
+					<form class="insertCommentForm"> 
+					<textarea style="padding:10px" id="insertComment" class="insertComment" placeholder="Leave a comment..." ></textarea>
+					<button type="button" onclick="commentOnPage()" class="insertCommentButton" id="insertCommentButton">Post</button>
+					</form>
+					<br/> 
+					<div class="commentInside">
+                                                <img onclick="location.href=''"; style="cursor: pointer;display:inline;position:relative; float:left;top:3px;" id="profilepic" src="images/jayleen.jpg" alt="default avatar" height="45" width="45">
+						<div style="padding:3px;margin-left:50px;"><span onMouseOver="this.style.color='#779aff'" onMouseOut="this.style.color='#315cd8'" class="commenterName" id="commenterName" style="cursor: pointer" onclick="location.href=''";>
+                                                jayleen</span>
+						<span class="commenterTime" id="commenterTime">1/1/11 at 1:11pm</span>
+						<div class="commentLine">wow what a comment</div></div>
+						
+						<img onclick="location.href='profile-madeline.html'"; style="cursor: pointer;display:inline;position:relative; float:left;top:3px;" id="profilepic" src="images/madeline.jpg" alt="default avatar" height="45" width="45">
+						<div style="padding:3px;margin-left:50px;"><span onMouseOver="this.style.color='#779aff'" onMouseOut="this.style.color='#315cd8'" class="commenterName" id="commenterName" style="cursor: pointer" onclick="location.href='profile-madeline.html'";>
+                                                madeline</span>
+						<span class="commenterTime" id="commenterTime">2/2/22 at 2:22am</span>
+						<span> <img style="cursor: pointer; float:right;" title="Delete comment" onclick="deleteComment(''. $commentArray[$x*4+3]. '');" src="images/delete.png" height="15" width="15"></span><div class="commentLine">yes what a comment</div></div>
+						</div>
+				</div>
+            </div> 
+	    </div>
+            </div>
+       </div>
+</div>
+</div>
+<div style="padding:20%"></div>
+<br/>
+<br/>
+<br/>
+<br/>
+<div style="padding-bottom: 30%">
+</section>
+	   
+            </div>
+</body>
+
+<!--FOOTER-->
+<footer>
+	<table class="tablefooter">
+        <tr>
+            <td class="tablefooter">
+			<ul class="footlist">
+            <li>
+                <p class="startcrafting">
+                    SHARE AN IDEA! </p> <br/><br/><br/>
+                    <button onclick="location.href='uploadform.html'" type="button" class="button">Create DIY</button>
+                    </li>
+            <li>
+                <p class="foot">
+                    <br/><a href="index-user.html" onMouseOver="this.style.color='#b2fb9c'"
+   onMouseOut="this.style.color='gray'">Home</a> - <a href="about.html" onMouseOver="this.style.color='#b2fb9c'"
+   onMouseOut="this.style.color='gray'">About Us</a> - <a href="contact.html" onMouseOver="this.style.color='#b2fb9c'"
+   onMouseOut="this.style.color='gray'">Contact Us</a>
+                    <br/><br/>
+                    <a href="https://www.facebook.com/ideablr/"><img src="images/iconface.png" alt="" width="4%" height=""></a>
+                    <a href="https://twitter.com/ideablr"><img src="images/icontwitter.png" alt="" width="4%" height=""></a>
+                    <a href="mailto:staff@ideablr.com"><img src="images/iconmail.png" alt="" width="4%" height=""></a><br/>
+                </p>
+				</li>
+				<li>
+				
+                    <img onclick="location.href='http://www.bpa.org/'" class="footleft" style="cursor:pointer;" src="images/bpalogo.png" alt="" width="15%" height="">
+				</li>
+			</ul>
+            </td>
+        </tr>
+    </table>
+</footer>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script src="index.js"></script>
+<script src="profile.js"></script>
+<script>
+function openCity(cityName) {
+    var i;
+    var x = document.getElementsByClassName("city");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    document.getElementById(cityName).style.display = "block";  
+}
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on the button, open the modal 
+btn.onclick = function() {
+    modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+</html>

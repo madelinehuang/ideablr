@@ -1,0 +1,183 @@
+<!DOCTYPE html> 
+<html lang="en">
+
+<head> 
+	<meta charset ="utf-8"> 
+	<title>Sign Up - ideablr</title> 
+	<link rel="shortcut icon" href="favicon.ico" /> 
+	<link rel="icon" href="/favicon.ico" type="image/x-icon">
+</head>
+<style>
+	@import url("style.css");
+ 
+	/* BORDERED FORM STYLE */
+	form {
+		border: 3px dotted gray;
+		width: 30%;
+		margin: auto;
+		background-color: rgba(68, 171, 37, 0.2);
+	}
+	
+	/* FULL-WIDTH IMPUTS*/
+	input[type=text], input[type=password] {
+		width: 100%;
+		padding: 12px 20px;
+		margin: 8px 0;
+		display: inline-block;    
+		box-sizing: border-box;
+	}
+	
+	/*LOGIN BUTTON STYLE*/
+	.butt {
+		background-color: rgba(24, 25,51, 0.7);
+		color: white;
+		padding: 14px 20px;
+		margin: 8px 0;
+		border: none;
+		cursor: pointer;
+		width: 100%;
+	}
+	
+	.container {
+		padding: 16px;
+	}
+	
+	/*"FORGET PSW" TEXT*/
+	div.psw {
+		float: right;
+		padding-top: 10px;
+	}
+	
+	/*KEEPS "FORGET PSW" RIGHT UNDER FORM*/
+	div.space {
+		margin:auto;
+		width: 30%;
+	}
+	
+	/*"NEW TO IDEABLR?" TEXT*/
+	div.signup {
+		text-align:center;
+		padding-top: 40px;
+		width:100%;
+		font-family:Tahoma, Geneva, sans-serif;
+		font-weight:bold;
+		color: #404880;
+		font-size:24px;
+	}
+	
+	/*"SIGN UP HERE" TEXT*/
+	div.sign2 {
+		text-align:center;
+		width:100%;
+		font-family:Tahoma, Geneva, sans-serif;
+		color: #404880;
+		font-size:15px;
+	}
+</style> 
+<body> 
+<div id="container">
+
+<header>
+	<h1 class="head"><!--NAVBAR BEGINS-->   
+    <nav>
+        <ul class="title" id="title">
+        	<a href="index.html"><img id="pinkhead" class="left" src="images/ilogo.png" alt="" width="13%" height=""><!--logo --></a>
+                <div class="right">
+                    <li class="title"><a class="title" id="title" href="crafts.html">ARTS & CRAFTS</a></li>
+                    <li class="title"><a class="title" href="crafts.html">FOOD</a></li>
+                    <li class="title"><a class="title" href="crafts.html">TECHNOLOGY</a></li>
+                    <li class="title"><a class="title" href="crafts.html">OTHER</a></li>
+                    <li class="icon"><a class="icona" href="javascript:void(0);" onclick="myFunction()"><strong>☰</strong></a></li>
+        		 </div>
+		</ul>
+        <div class="dropdown">
+        <div class="dropbtn"><img class="profileicon" src="images/loginicon.png" alt="" width="30px" /></div>
+        <div class="dropdown-content">
+        <a href="login.html">Login</a>
+        <a href="signup.html">Sign Up</a>
+        
+            </div>
+            </div>
+	</nav>
+    </h1>
+    <h2 class="head2">ideablr: share your ideas<br/>a diy social media
+    </h2><!--These words don\'t appear. They serve 2 purposes: 
+    1.) so that the site has keywords that are searchable to search engines and 
+    2.) so that the relatively positioned home search has something to be located relatively to.-->
+</header><!--NAVBAR ENDS-->   
+<section>
+<div id="body">
+    <div class="signup">Welcome to Ideablr!</div><br/>
+<form action="signup.html" method="post">
+  <div class="container">
+  <font color="red"> <strong>Ideablr no longer has databases </strong></font><br/>
+	<font color="green"> <a href="index-user.html">Click here</a> to see a simulated account. </font> <br/><br/>
+  <font color="red"><center><b id="accountExists"></b></center></font>
+  	<label><font color="#181933"><b>First Name</b></font></label>
+    <input type="text" placeholder="First Name" name="Fname" required>
+    
+  	<label><font color="#181933"><b>Last Name</b></font></label>
+    <input type="text" placeholder="Last Name" name="Lname" required>
+  
+  	<label><font color="#181933"><b>Email</b></font></label>
+    <input type="text" placeholder="Enter Email" name="email" required>
+  
+    <label><font color="#181933"><b>Username</b></font></label>
+    <input type="text" placeholder="Enter Username" name="Uname" required>
+
+    <label><font color="#181933"><b>Password</b></font></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+    
+    <button type="submit" class="butt" >Sign Up</button></div>
+</form>
+    <div class="signup">Already have an account?</div>
+    <div class="sign2">Login <a href="login.html">here</a></div>
+    
+</div>
+</section>
+<!--FOOTER-->
+<footer>
+	<table class="tablefooter">
+        <tr>
+            <td class="tablefooter">
+			<ul class="footlist">
+				<li>
+                <p class="startcrafting">
+                    START A NEW DIY! </p> <br/><br/><br/>
+                    <button onclick="location.href='login.html'" type="button" class="button">Login</button>
+                    <button onclick="location.href='signup.html'" type="button" class="button">Sign Up</button>
+                </li>
+				<li>
+                <p class="foot">
+                    <br/><a href="index.html" onMouseOver="this.style.color='#b2fb9c'"
+   onMouseOut="this.style.color='gray'">Home</a> - <a href="about.html" onMouseOver="this.style.color='#b2fb9c'"
+   onMouseOut="this.style.color='gray'">About Us</a> - <a href="contact.html" onMouseOver="this.style.color='#b2fb9c'"
+   onMouseOut="this.style.color='gray'">Contact Us</a>
+                    <br/><br/>
+                    <a href="https://www.facebook.com/ideablr/"><img src="images/iconface.png" alt="" width="4%" height=""></a>
+                    <a href="https://twitter.com/ideablr"><img src="images/icontwitter.png" alt="" width="4%" height=""></a>
+                    <a href="mailto:staff@ideablr.com"><img src="images/iconmail.png" alt="" width="4%" height=""></a><br/>
+                </p>
+				</li>
+				<li>
+                    <img onclick="location.href=\'http://www.bpa.org/\'" class="footleft" style="cursor:pointer;" src="images/bpalogo.png" alt="" width="15%" height="">
+				</li>
+			</ul>
+            </td>
+        </tr>
+    </table>
+</footer>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script src="index.js"></script>
+<script type="text/javascript">
+        var url = window.location.href; 
+        var x = url.indexOf("?");
+        var rest = url.substring(x+1);
+        if (rest == "usernametaken=true"){usernameTakenError();}
+        function usernameTakenError(){
+        $("#accountExists").html("Sorry, that username is taken, please choose another one.");
+        }
+</script>
+</body>
+</html>

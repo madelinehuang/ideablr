@@ -1,0 +1,555 @@
+/*User Profile Sidebar Format by keenthemes bootsnipp.com*/
+
+/* Profile container */
+.profile {
+  margin: 20px 0;
+}
+div.container {
+        width: 80%;
+        margin: auto;
+}
+
+/* Profile sidebar */
+#userphoto {
+  display: block;
+  margin: auto;
+  
+}
+#profilepic {
+  display: block;
+  margin: auto;
+  background: #fff;
+  -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.4);
+  -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.4);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.4);
+  border-radius: 50%;
+}
+#camera {
+  display: block;
+  margin: auto;
+  background: #fff;
+  -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.4);
+  -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.4);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.4);
+  border-radius: 50%;
+  margin-top:-150px;
+  opacity:0;
+}
+#camera:hover 
+{
+        opacity:0.7;
+}
+
+.profile-sidebar {
+  padding: 20px 0 10px 0;
+  background: #fff;
+  width: 20%;
+  float:left;
+  margin-left: 20px;
+}
+
+
+.profile-usertitle {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.profile-usertitle-name {
+  color: #181933;
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 7px;
+}
+
+.profile-usertitle-job {
+  text-transform: uppercase;
+  color: #404880;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.profile-userbuttons {
+  text-align: center;
+}
+
+.profile-userbuttons .btn {
+  text-transform: uppercase;
+  text-align:center;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 6px 15px;
+}
+
+.profile-userbuttons .btn:last-child {
+  /*margin-right: 0px;*/
+}
+    
+.profile-usermenu {
+  margin-top: 30px;
+}
+
+.profile-usermenu ul li {
+  border-bottom: 1px solid #e5e5ff;
+  padding:10px;
+}
+
+.profile-usermenu ul li:last-child {
+  border-bottom: none;
+}
+
+.profile-usermenu ul li a {
+  color: #181933;
+  font-size: 16px;
+  padding-bottom:10px;
+  padding-top: 13px;
+   /*ca't get this to use a percent*/
+  font-weight: 400;
+}
+
+.profile-usermenu ul li a i {
+  margin-right: 8px;
+  font-size: 16px;
+}
+
+.profile-usermenu li:hover {
+  color: #5b9bd1;
+  background-color: #f9faff;
+  border-left: 2px solid #eaf2ff;
+  margin-left: -2px;
+
+}
+
+.profile-usermenu ul li.active  {
+  color: gray;
+  background-color: #f9faff;
+  border-left: 2px solid #eaf2ff;
+  margin-left: -2px;
+}
+
+/* Profile Content */
+.profile-content {
+  padding: 40px;
+  float:right;
+  margin-right: 2%;
+  background: #fff;
+  min-height: 300px;
+  width:65%;
+}
+
+div.title {
+        width: 100%;
+        text-align: left;
+        font-family: "Lucida Sans Unicode", "Lucida Grande", Arial, sans-serif;
+        font-weight: bold;
+        font-variant: small-caps;
+        color: #041038;
+        font-size: 40px;
+}
+
+div.title img {
+        height: 50px;
+        margin-bottom: -10px;
+}
+
+p.info {
+        color:#404880;
+        font-family: "Lucida Sans Unicode", "Lucida Grande", Arial, sans-serif;
+        font-size: 1em;
+        -webkit-margin-before: 0em;
+}
+
+p.smallinfo {
+        color:gray;
+        font-family: "Lucida Sans Unicode", "Lucida Grande", Arial, sans-serif;
+        font-size: .8em;
+        -webkit-margin-before: 0em;
+        font-style:italic;
+}
+
+.btn-profile {
+    width: 35%;
+    text-align: center;
+}
+
+.btn-message{
+	color: #fff;
+        
+    background-color: #acc3fd;
+    border-color: #92aef4;
+}
+.btn {
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    float:right;
+    margin-top:-40px;
+}
+
+.nav {
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+ul {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+
+.col-about
+{
+    position: relative;
+    min-height: 1px;
+    padding-right: 20px;
+    padding-left: 20px;
+    width: 30%;
+    display: inline-block;
+    text-align: left;
+    vertical-align: top;
+    color:#404880;
+        font-family: "Lucida Sans Unicode", "Lucida Grande", Arial, sans-serif;
+        font-size: 1em;
+        font-variant: small-caps;
+}
+
+.smallabout
+{
+    position: relative;
+    min-height: 1px;
+    padding-right: 20px;
+    padding-left: 20px;
+    width: 30%;
+    display: inline-block;
+    text-align: left;
+    vertical-align: top;
+    color:dimgray;
+        font-family: "Lucida Sans Unicode", "Lucida Grande", Arial, sans-serif;
+        font-size: .9em;
+        font-variant: small-caps;
+        font-style: italic;
+}
+
+/*ARTICLES*/
+.favoritelist {
+        margin: auto;
+	text-align: center;
+}
+.favoritelist li{
+	display: inline-block;
+	margin: 10px;
+}
+.favoritelist li:hover img{
+	-webkit-transform: scale(1.1);
+	-moz-transform: scale(1.1);
+	transform: scale(1.1);
+}
+.articlelist {
+        margin: auto;
+	text-align: left;
+}
+.articlelist li{
+	display: block;
+	margin: 10px;
+        background-color: lightgray;
+        padding: 10px;
+        margin: auto;
+        height:100px;
+}
+.articlelist img {
+        border-radius: 50%;
+        float:left;
+        margin-right:10px;
+}
+.articlelist p {
+        margin:0;
+        overflow:hidden;
+        margin-left:10px;
+        font-family: "Lucida Sans Unicode", "Lucida Grande", Arial, sans-serif;
+        font-size: .9em;
+}
+.articlelist h1 {
+        margin:0;
+        margin-left:10px;
+        color:#041038;
+        font-family: "Lucida Sans Unicode", "Lucida Grande", Arial, sans-serif;
+        font-size: 1.1em;
+}
+.articlelist li:hover {
+        cursor:pointer;
+        background-color:#b2fb9c;
+}
+.articlelist:hover h1{
+        text-decoration:underline;
+}
+
+/*CONNECT*/
+.iconlist {
+        margin: auto;
+        text-align:center;
+        margin-top:-50px;
+}
+.iconlist li{
+	display: inline-block;
+	margin: 10px;
+}
+.iconlist li:hover img{
+	-webkit-transform: scale(1.1);
+	-moz-transform: scale(1.1);
+	transform: scale(1.1);
+}
+.formtitle {
+        color:#041038;
+        font-family: "Lucida Sans Unicode", "Lucida Grande", Arial, sans-serif;
+        font-variant: small-caps;
+        font-size: 1.1em;
+        padding-top: 10px;
+}
+.formcontainer {
+        width:80%;
+        margin:0 auto;
+}
+.formcontainer label {
+        font-family: "Lucida Sans Unicode", "Lucida Grande", Arial, sans-serif;
+        font-size: 0.9em;
+        font-style:italic;
+        position: relative;
+    min-height: 1px;
+    padding-right: 20px;
+    padding-left: 20px;
+    width: 30%;
+    display: inline-block;
+    text-align: left;
+    vertical-align: top;
+}
+.formcontainer input[type=text] {
+    border: none;
+    border-bottom: 2px solid navy;
+    margin-bottom:20px;
+    width:50%;
+    padding:5px;
+}
+.formcontainer textarea {
+    border: none;
+    border-bottom: 2px solid navy;
+    margin-bottom:20px;
+    width:50%;
+    padding:5px;
+}
+.formcontainer button {
+    width: 20%;
+    text-align: center;
+    padding: 6px 12px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    margin: auto;
+    display:block;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/*COMMENTS*/
+.commentBox
+{
+border: none;
+padding: 5px;
+font: 16px;
+width: 100%;
+height: 300px;
+overflow: auto;
+
+}
+
+.commentInside
+{
+    background-color: #f7f7ff;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    padding: 5px;
+}
+.commentLine
+{
+    padding-bottom: 10px;
+}
+
+.commenterName
+{
+        font-size: 18px;
+        color: #315cd8;
+        font-weight: bold;
+}
+
+.commenterTime
+{
+        font-size: 12px;
+        color: #656c7a;
+}
+
+.insertComment
+{
+        width:82%; 
+        margin-left: 5px;
+        
+        margin-bottom: 2px;
+}
+
+.insertCommentForm
+{
+        margin-bottom: 10px;
+}
+.insertCommentButton
+{
+        width:50px;
+        margin-top:3px;
+        float:right;
+        margin-right: 3%;
+        padding: 1% 2% 1% 2%;
+        color: #ffffff;
+        border: 1px solid #315cd8;
+        border-radius: 5px;
+    text-shadow: 0px 1px 1px #ffffff;
+    border-bottom: 2px solid #acc3fd;
+    background-color: #315cd8;
+    background: -webkit-gradient(linear, left top, left bottom, from(#acc3fd), to(#315cd8));
+    margin-bottom: 10px;
+}
+
+button.insertCommentButton:hover, button.insertCommentButton:active 
+{
+    background: -webkit-gradient(linear, left top, left bottom, from(#315cd8), to(#acc3fd));
+}
+
+/*Responsive Design*/
+
+/*For Desktop Viewing*/
+@media screen and (min-width: 1190px)
+{
+    /*Default set*/
+}
+
+/*For Tablet Viewing*/
+@media screen and (max-width: 1190px)
+{
+    .profile-content{
+            width: 63%;
+    }
+    .profile-userbuttons .btn{
+            padding-left:5px;
+            padding-right:5px;
+    }
+    .col-about
+    {
+            padding-left:10px;
+            margin-right:10px;
+    }
+    .profile-content
+    {
+            padding: 30px;
+            padding-left:25px;
+    }
+    .insertComment
+    {
+            width: 75%;
+    }
+    .insertCommentButton
+    {
+            width:40px;
+            padding-left:1px;
+            padding-right:1px;
+            margin-right:3px;
+    }
+}
+
+/*For Mobile Viewing*/
+@media screen and (max-width: 750px)
+{
+    .profile-content{
+            padding: 20px;
+            width: 65%;
+    }
+    .col-about
+    {
+            padding-left:5px;
+            margin-right:25px;
+    }
+    .profile-content
+    {
+            width:80%;
+            margin:5%;
+            padding: 5%;
+    }
+    .insertComment
+    {
+            width: 65%;
+    }
+    .insertCommentButton
+    {
+            width:40px;
+            padding-left:1px;
+            padding-right:1px;
+            margin-right:1px;
+    }
+    .profile-sidebar
+    {
+            
+            width: 90%;
+            margin:5%;
+            margin-top:0px;
+    }
+
+}
