@@ -505,17 +505,7 @@
                           <!-- Modal content -->
                           <div class="modal-content">
                             <span class="close">&times;</span>
-                            <!--Stuff inside popup-->';
-                            echo'<div class="newstitle">You Have ' . $numNotifications . ' Notification(s)</div><br/><br/>';
-                            for ($x = 0; $x < $numNotifications; $x++)
-                            {
-                                echo '<div onclick="location.href=\'' . substr($notificationlist[$x*3+1],0,440) .'\'"; class="newsbox">
-                                <div class="closenews" onclick="deleteNotification(\''. $notificationlist[$x*3]. '\',\''. substr($notificationlist[$x*3+1],0,440) . '\',\'' . $notificationlist[$x*3+2] . '\');">&times;</div>' . 
-                                    $notificationlist[$x*3] . '<br/>On ' . $notificationlist[$x*3+2] . '
-                                    </div>';
-                            }
-                                    
-                          echo'</div>
+                            <!--Stuff inside popup--></div>
                           </div>
                             <!--End of Stuff-->
        
