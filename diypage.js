@@ -5,6 +5,9 @@ $(".commentInside:hidden").each(function(key, value)
     $(value).delay(key * 500).fadeIn(750);
 });
 
+/* Note that all $.ajax functions do not work anymore (since the database isn't there anymore) so there is no way information can be posted to the php files. 
+Also since the php files don't work anymore. */
+
 function  commentOnPage()
 {
     var loggedUser = $("#namer").text(); //username of the person logged in
